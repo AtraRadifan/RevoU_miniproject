@@ -73,53 +73,12 @@ body{
     padding: 10px;
 }
 
-.mainContainer{
-    position: relative;
-    color: black;   
+.messageContiner{
+    margin: 0;
 }
 
-.mainContainer h1, p{
-    margin-left: 44px;
-}
-
-.mainContainer img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-}
-
-
-.bodyContainer{
-    position: absolute;
-    top: 8px;
-    left: 16px;
-}
-
-.itemBox{
-    display: inline-block;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 33%;
-}
-
-.itemBox img{
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-}
-
-.itembox h3{
-    display: block;
-    font-size: 1.17em;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
+.messageContiner h1{
+    margin-left: 40px;
 }
 
 footer{

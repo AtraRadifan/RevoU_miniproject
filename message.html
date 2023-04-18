@@ -6,8 +6,10 @@
     <title>Message Us!</title>
     <link rel="stylesheet" href="CSS/messageStyle.css">
     <link rel="icon" type="image/x-icon" href="Assets/logoHome.jpg">
+    
   </head>
 
+  <script src="indexScript.js"></script>
   <body>
 
     <!-- NAVBAR - START -->
@@ -29,66 +31,58 @@
 
     <!-- MAIN CONTENT - START -->
         <!-- WELCOME CONTENT = START -->
-    <div class="container">
-      <div class="mainContainer">
-        <h1 id="title">WELCOME to Edut School!</h1>
-        <p>Learning from the professional.</p>
-        <img src="Assets/welcome-background.jpg" alt="Snow" style="width:100%;">
-      </div>
-    </div>
+        <div class="container">
+            <div class="messageContainer">
+              <h1>Message Us</h1>
+              <form name="msgForm" onsubmit="return pesan()">
+                <div class="queueContainer">
+                  <div class="nameContainer">
+                    <label for="fname">Nama: </label>
+                    <div class="inputBox">
+                      <input type="text" id="fname" name="fname">
+                    </div>
+                  </div>
+          
+                  <div class="dateContainer">
+                    <label for="birthday">Tanggal Lahir:</label>
+                    <br>
+                    <input type="date" id="birthday" name="birthday">
+                  </div>
+          
+                  <div class="genderContainer">
+                    <p>Jenis Kelamin: </p>
+                    <div class="inputBox">
+                      <input type="radio" id="men" name="gender" value="Laki-laki">
+                      <label for="men">Laki-laki</label>
+                      <input type="radio" id="women" name="gender" value="Perempuan">
+                      <label for="women">Perempuan</label>
+                    </div>
+                  </div>
+          
+                  <div class="pesanContainer">
+                    <p>Pesan: </p>
+                    <textarea name="pesanArea" id="pesanArea">Tulis Pesan disini</textarea>
+                    <br>
+                  </div> 
+                </div> 
+                <div class="outputBox">
+                  <h4>Current Time:</h4><br>
+                  <span id="sendDate"></span>
+                  <h4>Nama:</h4><br>
+                  <span id="sendName"></span>
+                  <h4>Tanggal Lahir:</h4><br>
+                  <span id="sendBirthday"></span>
+                  <h4>Jenis Kelamin:</h4><br>
+                  <span id="gender"></span>
+                  <h4>Pesan:</h4><br>
+                  <span id="sendPesan"></span>
+                </div>
+                <input type="submit" value="Submit">
+        
+              </form>
+            </div>
         <!-- WELCOME CONTENT = END -->
 
-        <!-- FACILITATION CONTENT = START -->
-    <div class="container">
-        <div class="mainContainer">
-          <h1>Our Facilitation</h1>
-          <div class="itemBox">
-            <img src="Assets/teacher.jpg">
-            <h3>Professional Teacher</h3>
-          </div>
-          <div class="itemBox">
-            <img src="Assets/soccer.jpg">
-            <h3>Sports Field</h3>
-          </div>
-          <div class="itemBox">
-            <img src="Assets/classroom.jpg">
-            <h3>Classroom</h3>
-          </div>
-        </div>
-    </div>
-      
-    </div>
-        <!-- FACILITATION CONTENT = END -->
-
-        <!-- MESSAGE CONTENT = START -->
-    <div class="container">
-      <div class="mainContainer">
-        <h1>Message Us</h1>
-        <div class="nameContainer">
-          <p>Nama</p>
-          <p>:</p>
-          <div class="nameInputBox">
-
-          </div>
-        </div>
-        <div class="dateContainer">
-          <p>Tanggal Lahir</p>
-          <p>:</p>
-        </div>
-        <div class="genderContainer">
-          <p>Jenis Kelamin</p>
-          <input type="radio" id="men" name="gender" value="Laki-laki">
-          <label for="men">Laki-laki</label><br>
-          <input type="radio" id="women" name="gender" value="Perempuan">
-          <label for="women">Perempuan</label><br>
-        </div>
-        <div class="messageContainer">
-          <p>Pesan</p>
-        </div> 
-      </div>
-    </div>
-        <!-- MESSAGE CONTENT = END -->
-    <!-- MAIN CONTENT - END -->
 
     <!-- FOOTER CONTENT - START -->
     <footer>
