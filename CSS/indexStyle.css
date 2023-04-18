@@ -1,0 +1,181 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.container{
+    border-bottom: 2px solid black;
+}
+
+.navbar{
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(0, 218, 247);
+}
+
+#logo{
+    height: 10vh;
+    width: 10vw;
+    margin: 0;
+    float: left;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 80px;
+    width: 100%;
+}
+
+.navbarContent{
+    float:right;
+    margin-right: 10vw;
+}
+
+.navbar li{
+    background-color: white;
+    float: left;
+    margin-top: 18px;
+    height: 100%;
+    text-align: center;  
+    border-style: solid;
+    border-width: thin;
+}
+
+.navbar li #currentPage{
+    background-color: rgb(5, 255, 192);
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.navbar li:first-child{
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+.navbar li:last-child{
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-left: none;
+}
+
+.navbar li:not(:first-child):not(:last-child){
+    border-left: none;
+}
+
+.navbar li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    width: 120px;
+    padding: 10px;
+}
+
+.mainContainer{
+    position: relative;
+    color: black;   
+}
+
+.mainContainer h1, p{
+    margin-left: 44px;
+}
+
+.mainContainer img{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.bodyContainer{
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+.itemBox{
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 33%;
+}
+
+.itemBox img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.itembox h3{
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.messageContainer{
+    display: inline-block;
+    width: 100%;
+    margin-left: 80px;
+}
+
+.messageContainer h1{
+    margin-left: -36px;
+}
+
+.queueContainer, .nameContainer, .dateContainer, .genderContainer, .pesanContainer, p{
+    margin-top: 20px;
+    width: auto;
+}
+
+.genderContainer p, .pesanContainer p{
+    margin: 0;
+}
+
+#pesanArea{
+    margin-bottom: 20px;
+}
+
+.outputBox{
+    border: solid 1px black;
+    width: 40%;
+    margin-bottom: 30px;
+}
+
+footer{
+    background-color: rgb(0, 218, 247);
+}
+
+.footerBox{
+    text-align: right;
+    margin-right: 10px;
+}
+
+.footerBox h2{
+    margin: 0;
+    padding: 14px;
+    font-size: small;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar li a {
+        display: inline-block;
+        color: black;
+        text-align: center;
+        text-decoration: none;
+        width: 89px;
+        padding: 6px;
+    }
+
+    .itemBox{
+        width: auto;
+    }
+  }
